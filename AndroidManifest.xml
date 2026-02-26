@@ -73,5 +73,10 @@
                 android:value="true" />
         </service>
 
+        <activity
+            android:name=".PerAppKprofilesActivity"
+            android:exported="false"
+            android:label="@string/per_app_kprofiles_title" />
+         
     </application>
 </manifest>
