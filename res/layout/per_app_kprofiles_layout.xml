@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 GuidixX
+     Licensed under the Apache License, Version 2.0
+-->
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kprofiles_rv_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />

@@ -27,17 +27,15 @@
           android:entries="@array/kprofiles_modes_entries"
           android:entryValues="@array/kprofiles_modes_values"
           android:defaultValue="@integer/kprofiles_modes_default"
-          android:title="@string/kprofiles_modes_title" 
-          android:summary="%s" />
+          android:title="@string/kprofiles_modes_title" />
 
      <Preference
           android:key="per_app_kprofiles_manage"
           android:title="@string/per_app_kprofiles_title"
           android:summary="@string/per_app_summary" />
-     
+
      <com.android.settingslib.widget.FooterPreference
           android:key="pref_kprofiles_modes_info"
-          android:title="%s"
           android:selectable="false" />
 
 </PreferenceScreen>

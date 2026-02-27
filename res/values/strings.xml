@@ -18,14 +18,17 @@
     <string name="kprofiles_auto_title">Use Auto KProfiles</string>
     <string name="kprofiles_auto_summary">Automatically switch to battery mode when device screen turns off and back to default profile when screen turns on</string>
     <string name="kprofiles_modes_title">KProfiles Modes</string>
-    <string name="per_app_kprofiles_title">Per-app KProfiles</string>
-    <string name="per_app_kprofiles_tile">Per-app KProfiles</string>
+     <string name="per_app_kprofiles_title">Per-app KProfiles</string>
+     <string name="per_app_kprofiles_tile">Per-app KProfiles</string>
+     <string name="per_app_summary">Set a KProfiles mode for each app individually</string>
+     <string name="per_app_mode_default">Default (global)</string>
+     <string name="kprofiles_per_app_default">Default</string>
     <string name="kprofiles_modes_none">None</string>
     <string name="kprofiles_modes_battery">Battery</string>
     <string name="kprofiles_modes_balanced">Balanced</string>
     <string name="kprofiles_modes_performance">Performance</string>
     <string name="kprofiles_not_supported">KProfiles is not currently supported by the kernel</string>
-    <string name="kprofiles_modes_description" translatable="false"><xliff:g id="description">%s</xliff:g></string>
+    <string name="kprofiles_modes_description" translatable="false">KProfiles mode description</string>
     <string name="kprofiles_modes_none_description">Regulate and manage in-kernel activities in a profile-oriented manner to achieve balance in terms of battery backup and performance accordingly</string>
     <string name="kprofiles_modes_battery_description">Battery Mode:\nSkip all userspace and/or in-kernel boosts, reduces gpu scaling frequency</string>
     <string name="kprofiles_modes_balanced_description">Balanced Mode:\nTips the balance between battery and performance modes</string>

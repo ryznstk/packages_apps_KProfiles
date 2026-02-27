@@ -23,13 +23,13 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    
-     <protected-broadcast android:name="com.android.kprofiles.battery.KPROFILE_CHANGED" />
-     
+
+    <protected-broadcast android:name="com.android.kprofiles.battery.KPROFILE_CHANGED" />
+
     <application
         android:label="@string/kprofiles_title"
         android:persistent="false"
-        android:theme="@style/Theme.SubSettingsBase.Expressive">
+        android:theme="@style/Theme.SubSettingsBase">
 
         <receiver
             android:name=".BootCompletedReceiver"
@@ -43,7 +43,8 @@
         <activity
             android:name=".battery.KprofilesSettingsActivity"
             android:exported="true"
-            android:label="@string/kprofiles_title">
+            android:label="@string/kprofiles_title"
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
@@ -52,9 +53,6 @@
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.battery" />
-            <meta-data
-                android:name="com.android.settings.group_key"
-                android:value="percentage_category" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/kprofiles_summary" />
@@ -77,6 +75,10 @@
             android:name=".PerAppKprofilesActivity"
             android:exported="false"
             android:label="@string/per_app_kprofiles_title" />
-         
+
+        <service
+            android:name=".PerAppKprofilesService"
+            android:exported="false" />
+
     </application>
 </manifest>
