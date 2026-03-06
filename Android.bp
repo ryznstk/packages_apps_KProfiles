@@ -25,4 +25,15 @@ android_app {
         "androidx.core_core",
         "androidx.preference_preference",
     ],
+
+    required: [
+        "privapp_whitelist_com.android.kprofiles.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_com.android.kprofiles.xml",
+    src: "permissions/privapp_whitelist_com.android.kprofiles.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
 }
